@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">			p .nav{				color:green;				position: relative;/* 相对定位 */			}			p .nav::after{
+				content: attr(title);
+				word-break: keep-all;
+				padding: 2px 16px;				background-color: #000000;						        color: aliceblue;
+				position: absolute;				left: calc(100% + 20px);
+				border-radius: 8px;				opacity: 0;/* 透明度 */
+				transition: all 1s;
+				
+				/* width: 40px; */			}
+			p .nav:hover::after{
+				opacity: 1;
+				
+				left: calc(100% + 10px);
+			}
+		</style>
+	</head>
+	<body>
+		<p>人生若只如初见,何事秋风悲画扇。人生若只如初见,<span title="你好!" class="nav">一切过往都化为红尘中的一缕云烟.</span>忘却那些相离相弃的痛楚，只留下初见时的欣喜与惊艳。
+		人面不知何处去，桃花依旧笑春风。心爱的人已经不知去向，只剩下桃花依然在春风中绽放。</p>
+	</body>
+</html>
